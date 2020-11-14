@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <div>
+            <h1 class="heading">Login</h1>
+        </div>
+        <div class="textarea">
+            <i class="fa fa-user" aria-hiden="true"></i>
+            <input type="text" placeholder="Username" value="" id="inp">
+
+        </div>
+        <div class="textarea ">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" value="" id="pass">
+        </div>
+        <button class="button" onclick="hello()">Login</button>
+
+
+    </div>
+    <script>
+        function hello() {
+            var text = document.getElementById("pass").value
+            document.getElementById("pass").innerHTML = text
+            if (text == "123456789") {
+                var name = document.getElementById('inp').value;
+                sessionStorage.setItem('userName', name);
+
+                document.location.href = "inside.html";
+            } else {
+                window.alert("Wrong username or Password")
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>

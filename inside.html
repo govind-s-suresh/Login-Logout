@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="inside.css">
+</head>
+
+<body>
+    <h3 id="welcome"></h3>
+    <br>
+    <h2> Here is your Lucky song of the Day</h2>
+    <br>
+    <audio controls loop>
+        <source src="swarna.ogg" type="audio/ogg">
+            <source src="swarna.mp3" type="audio/mpeg">
+        </audio>
+    <br>
+    <a href="login - Copy.html"><button onclick="power()">Logout</button></a>
+</body>
+<script>
+    window.onload = function() {
+        document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('userName');
+    };
+
+    function power() {
+        window.alert("Logout Successful")
+
+        window.localStorage.clear();
+        window.location.reload(true);
+        window.location.replace('/');
+    };
+</script>
+
+</html>

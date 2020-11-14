@@ -1,0 +1,65 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    background: url(trolly.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.login-box {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-blend-mode: difference;
+    border-right: 1px solid antiquewhite;
+    border-bottom: 1px solid bisque;
+}
+
+.heading {
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid#03fcdb;
+    margin-bottom: 50px;
+    padding: 13px 0
+}
+
+.textarea {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid#a83250;
+}
+
+.textarea i {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textarea input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #30fa02;
+    font-size: 18px;
+    width: 180px;
+    float: left;
+    margin: 0 10px;
+}
+
+.button {
+    background: #df0ceb;
+    outline: none;
+    width: 160px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    float: none;
+}
